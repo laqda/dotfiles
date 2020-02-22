@@ -55,7 +55,7 @@
 !/.local/share/Aspyr/Sid Meier's Civilization 5
 /.local/share/Aspyr/Sid Meier's Civilization 5/*
 
-!/.local/share/Aspyr/Sid Meier's Civilization 5/config.ini
+!/.local/share/Aspyr/Sid Meier's Civilization 5/config.ini.modifications
 
 !/.local/share/fonts
 /.local/share/fonts/*
