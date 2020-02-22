@@ -22,9 +22,17 @@
 /.IntelliJIdea2019.3/*
 !/.IntelliJIdea2019.3/config
 /.IntelliJIdea2019.3/config/*
-!/.IntelliJIdea2019.3/config/keymaps/*
+
+!/.IntelliJIdea2019.3/config/keymaps
+/.IntelliJIdea2019.3/config/keymaps/*
 
 !.IntelliJIdea2019.3/config/keymaps/q.xml
+
+!/.IntelliJIdea2019.3/config/options
+/.IntelliJIdea2019.3/config/options/*
+
+!.IntelliJIdea2019.3/config/options/abbreviations.xml
+!.IntelliJIdea2019.3/config/options/keymap.xml
 
 # .local
 
