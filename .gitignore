@@ -1,0 +1,94 @@
+# .gitignore dotfiles
+
+# ignore every sub folders by default
+
+/*
+
+# .config
+
+!/.config
+/.config/*
+
+!.config/alacritty
+!.config/fish
+!.config/i3
+!.config/omf
+!.config/redshift.conf
+!.config/rofi
+
+# .IntelliJIdea2019.3
+
+!/.IntelliJIdea2019.3
+/.IntelliJIdea2019.3/*
+!/.IntelliJIdea2019.3/config
+/.IntelliJIdea2019.3/config/*
+!/.IntelliJIdea2019.3/config/keymaps/*
+
+!.IntelliJIdea2019.3/config/keymaps/q.xml
+
+# .local
+
+!/.local
+/.local/*
+!/.local/share
+/.local/share/*
+
+!.local/share/applications
+/.local/share/applications/*
+
+!/.local/share/applications/Sid Meier's Civilization V.desktop
+!/.local/share/applications/eclipse-rcp-rap.desktop
+!/.local/share/applications/eclipse.desktop
+!/.local/share/applications/ghidra.desktop
+!/.local/share/applications/molotov.desktop
+
+!/.local/share/Aspyr
+/.local/share/Aspyr/*
+!/.local/share/Aspyr/Sid Meier's Civilization 5
+/.local/share/Aspyr/Sid Meier's Civilization 5/*
+
+!/.local/share/Aspyr/Sid Meier's Civilization 5/config.ini
+
+!/.local/share/fonts
+/.local/share/fonts/*
+
+!/.local/share/fonts/NerdFonts.md
+
+# .mozilla
+
+!/.mozilla
+/.mozilla/*
+!/.mozilla/firefox
+/.mozilla/firefox/*
+!/.mozilla/firefox/dmppn1ye.default-release
+/.mozilla/firefox/dmppn1ye.default-release/*
+!/.mozilla/firefox/dmppn1ye.default-release/chrome
+/.mozilla/firefox/dmppn1ye.default-release/chrome/*
+
+!/.mozilla/firefox/dmppn1ye.default-release/chrome/userChrome.css
+
+# .vscode
+
+!/.vscode
+/.vscode/*
+!/vscode/extensions
+/vscode/extensions/*
+
+!.vscode/extensions/list.md
+
+# tools
+
+!/tools
+/tools/*
+!/tools/hma-linux
+/tools/hma-linux/*
+
+!/tools/hma-linux/hma-vpn.sh
+
+# other files
+
+!.gitconfig
+!.gitignore
+!.screenlayout
+!.vimrc
+

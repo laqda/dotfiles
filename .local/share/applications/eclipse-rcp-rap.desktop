@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=/home/q/tools/eclipse-rcp-rap/eclipse
+Icon=/home/q/tools/eclipse-rcp-rap/icon.xpm
+Name=Eclipse RCP RAP
+StartupWMClass=eclipse
+Terminal=false
+Type=Application
+Version=1.0

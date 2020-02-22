@@ -1,0 +1,68 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#TabsToolbar {
+	background: black !important;
+	margin: 0 !important;
+}
+
+#nav-bar {
+	background: #323232 !important;
+}
+
+/* background active tab */
+/*
+.tab-content {
+  background: black !important;
+}
+
+.tab-content[selected="true"] {
+  background: #323232 !important;
+}
+*/
+
+/* disable close btn for not hovered tabs */
+
+#tabbrowser-tabs .tabbrowser-tab:not(:hover) .tab-close-button { 
+	display: none !important;
+}
+
+
+/* remove bars border */
+
+#urlbar, .searchbar-textbox {
+  border: none !important;
+  box-shadow: none !important;
+  background: #323232 !important;
+}
+
+
+/* remove tabs border */
+
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+   border-left: none !important;
+}
+
+:root {
+  --tabs-border: transparent !important;
+}
+
+
+/* hide container icon */
+
+#userContext-indicator {
+	display: none !important;
+}
+
+
+/* remove top line active tab */
+
+.tab-line {
+	display: none !important;
+	background-color: none !important;
+}
+
+/* make bottom line max width */
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-bottom-line {
+	background-color: var(--identity-tab-color) !important;
+}

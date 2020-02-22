@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=/home/q/tools/eclipse/eclipse
+Icon=/home/q/tools/eclipse/icon.xpm
+Name=Eclipse
+StartupWMClass=eclipse
+Terminal=false
+Type=Application
+Version=1.0

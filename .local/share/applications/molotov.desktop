@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=/home/q/tools/molotov/molotov.AppImage --no-sandbox
+Icon=/home/q/tools/molotov/logo.png
+Name=Molotov
+StartupWMClass=molotov
+Terminal=false
+Type=Application
+Version=1.0

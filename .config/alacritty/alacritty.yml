@@ -1,0 +1,13 @@
+font:
+        normal:
+                family: DejaVuSansMono Nerd Font
+        
+        bold:
+                family: DejaVuSansMono Nerd Font
+                
+        italic:
+                family: DejaVuSansMono Nerd Font
+        
+        size: 7.0
+shell:
+        program: /usr/bin/fish
