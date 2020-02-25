@@ -39,7 +39,7 @@ SETUVAR _fish_abbr_t:tree
 SETUVAR _fish_abbr_v:vim
 SETUVAR _fish_abbr_vpn:sudo\x20/home/q/tools/hma\x2dlinux/hma\x2dvpn\x2esh\x20\x2dc\x20/home/q/tools/hma\x2dlinux/credentials\x2etxt\x20\x2dp\x20tcp\x20Paris
 SETUVAR _fish_abbr_y:yarn
-SETUVAR fish_color_autosuggestion:555\x1ebrblack
+SETUVAR fish_color_autosuggestion:888888
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:addc10
 SETUVAR fish_color_comment:990000
