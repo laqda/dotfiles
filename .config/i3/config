@@ -290,7 +290,7 @@ exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Acce
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Coordinate Transformation Matrix" 2.000000, 0.000000, 0.000000, 0.000000, 2.000000, 0.000000, 0.000000, 0.000000, 1.000000
 
 exec --no-startup-id nm-applet
-exec --no-startup-id redshift-gtk
+#exec --no-startup-id redshift-gtk
 
 exec --no-startup-id i3-msg 'workspace $ws1; exec alacritty'
 exec --no-startup-id firefox
