@@ -16,6 +16,7 @@ call plug#begin()
 Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
+Plug 'preservim/nerdcommenter'
 
 " GUI enhancements
 Plug 'doums/darcula'
@@ -81,8 +82,16 @@ let g:secure_modelines_allowed_items = [
                 \ "colorcolumn"
                 \ ]
 
+" nerdcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDCreateDefaultMappings = 0
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+map <leader>cc <Plug>NERDCommenterToggle('n', 'Toggle')<Cr>
+
 " NerdTree
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen = 1
 
 " Syntastics
 set statusline+=%#warningmsg#
@@ -126,7 +135,7 @@ let g:latex_fold_sections = []
 let g:rustfmt_autosave = 1
 
 " Quick-save
-nmap <leader>w :w<CR>
+imap <leader>w :w<CR>
 
 " Don't confirm .lvimrc
 let g:localvimrc_ask = 0
