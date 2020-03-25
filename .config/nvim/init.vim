@@ -135,7 +135,7 @@ let g:latex_fold_sections = []
 let g:rustfmt_autosave = 1
 
 " Quick-save
-imap <leader>w :w<CR>
+nmap <leader>w :w<CR>
 
 " Don't confirm .lvimrc
 let g:localvimrc_ask = 0
