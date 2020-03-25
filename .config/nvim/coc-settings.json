@@ -1,0 +1,5 @@
+{
+	"suggest.enablePreselect": true,
+	"rust-analyzer.cargo-watch.enable": false,
+	"rust-analyzer.serverPath": "/home/q/rust-analyzer-linux"
+}

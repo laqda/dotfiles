@@ -13,9 +13,15 @@
 !.config/fish
 !.config/i3
 !.config/omf
+!.config/nvim
 !.config/redshift.conf
 !.config/redshift
 !.config/rofi
+
+# nvim
+
+/.config/nvim/bundle/*
+/.config/nvim/plugged/*
 
 # .IntelliJIdea2019.3
 

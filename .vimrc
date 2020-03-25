@@ -19,11 +19,25 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 call plug#begin('~/.vim/plugged')
 
+" theme
+
 Plug 'doums/darcula'
+
+" fzf
+
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+
+" gui
+
 Plug 'preservim/nerdtree'
+
+" git
+
 Plug 'airblade/vim-gitgutter'
+
+" languages
+
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 

@@ -29,7 +29,7 @@ abbr c clear
 abbr y yarn
 abbr f fuck
 abbr t tree
-abbr v vim
+abbr v nvim
 abbr s sudo
 abbr ka sudo killall -9
 abbr apt sudo apt
