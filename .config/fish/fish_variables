@@ -36,7 +36,7 @@ SETUVAR _fish_abbr_s:sudo
 SETUVAR _fish_abbr_sapt:sudo\x20apt
 SETUVAR _fish_abbr_ska:sudo\x20killall\x20\x2d9
 SETUVAR _fish_abbr_t:tree
-SETUVAR _fish_abbr_v:vim
+SETUVAR _fish_abbr_v:nvim
 SETUVAR _fish_abbr_vpn:sudo\x20/home/q/tools/hma\x2dlinux/hma\x2dvpn\x2esh\x20\x2dc\x20/home/q/tools/hma\x2dlinux/credentials\x2etxt\x20\x2dp\x20tcp\x20Paris
 SETUVAR _fish_abbr_y:yarn
 SETUVAR fish_color_autosuggestion:888888
