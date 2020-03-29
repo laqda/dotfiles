@@ -102,7 +102,6 @@
 
 # other files
 
-!.gitconfig
 !.gitignore
 !.screenlayout
 !.vimrc
