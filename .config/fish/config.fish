@@ -30,6 +30,7 @@ abbr y yarn
 abbr f fuck
 abbr t tree
 abbr v nvim
+abbr nv nvim
 abbr s sudo
 abbr ka sudo killall -9
 abbr apt sudo apt
