@@ -14,13 +14,14 @@
     <keyboard-shortcut first-keystroke="shift alt f10" />
     <keyboard-shortcut first-keystroke="shift ctrl q" />
   </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="ctrl slash" />
+    <keyboard-shortcut first-keystroke="ctrl divide" />
+    <keyboard-shortcut first-keystroke="shift ctrl colon" />
+  </action>
   <action id="Console.Execute.Multiline" />
   <action id="Console.Jdbc.Execute" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
-  <action id="EditSource">
-    <keyboard-shortcut first-keystroke="f4" />
-    <keyboard-shortcut first-keystroke="alt enter" />
-  </action>
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="end" />
     <keyboard-shortcut first-keystroke="ctrl alt right" />
