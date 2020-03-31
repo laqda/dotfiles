@@ -32,6 +32,7 @@ SETUVAR _fish_abbr_ka:sudo\x20killall\x20\x2d9
 SETUVAR _fish_abbr_la:exa\x20\x2da
 SETUVAR _fish_abbr_ll:exa\x20\x2dla\x20\x2d\x2dgit
 SETUVAR _fish_abbr_ls:exa
+SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_s:sudo
 SETUVAR _fish_abbr_sapt:sudo\x20apt
 SETUVAR _fish_abbr_ska:sudo\x20killall\x20\x2d9
