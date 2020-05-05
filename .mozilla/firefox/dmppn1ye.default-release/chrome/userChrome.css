@@ -5,8 +5,9 @@
 	margin: 0 !important;
 }
 
-#nav-bar {
-	background: #323232 !important;
+#urlbar-background {
+	background-color: #323232 !important;
+	border: none !important;
 }
 
 /* background active tab */

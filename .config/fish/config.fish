@@ -12,12 +12,14 @@ set -g theme_nerd_fonts yes
 set GRADLE_HOME /opt/gradle/gradle-5.0/bin
 set CARGO_HOME /home/q/.cargo/bin
 set ECLIPSE_HOME /home/q/tools/eclipse
+set GRAALVM_HOME /home/q/tools/graalvm-ce-java11-19.3.1/
 
 # path
 
 set PATH $PATH $CARGO_HOME
 set PATH $PATH $GRADLE_HOME
 set PATH $PATH $ECLIPSE_HOME
+set PATH $PATH $GRAALVM_HOME/bin
 
 # alias
 
@@ -58,7 +60,20 @@ abbr drm docker rm
 abbr drmi docker rmi
 abbr dcl docker container list
 abbr dcla docker container list -a
+abbr dcsa docker container stop (docker container list -q)
 abbr dc docker-compose
+
+## abbr kubectl
+
+abbr k kubectl
+abbr kg kubectl get
+abbr kga kubectl get all --all-namespaces
+abbr kgp kubectl get pods
+abbr kgs kubectl get services
+abbr kgd kubectl get deployments
+abbr kdp kubectl delete pods
+abbr kds kubectl delete services
+abbr kdd kubectl delete deployments
 
 ## abbr vpn
 

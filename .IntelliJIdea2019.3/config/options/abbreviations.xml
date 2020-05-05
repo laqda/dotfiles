@@ -1,6 +1,9 @@
 <application>
   <component name="AbbreviationManager">
     <abbreviations>
+      <action id="CloseEditor">
+        <abbreviation name="ce" />
+      </action>
       <action id="TogglePresentationMode">
         <abbreviation name="pm" />
       </action>

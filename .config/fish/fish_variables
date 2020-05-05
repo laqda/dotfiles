@@ -11,8 +11,10 @@ SETUVAR _fish_abbr_dc:docker\x2dcompose
 SETUVAR _fish_abbr_dca:docker\x20container\x20list\x20\x2da
 SETUVAR _fish_abbr_dcl:docker\x20container\x20list
 SETUVAR _fish_abbr_dcla:docker\x20container\x20list\x20\x2da
+SETUVAR _fish_abbr_dcsa:docker\x20container\x20stop\x20ec20e9b6cb91\x208f8255e4a9f2\x20081885aeafa9\x203aefaf8f67df
 SETUVAR _fish_abbr_drm:docker\x20rm
 SETUVAR _fish_abbr_drmi:docker\x20rmi
+SETUVAR _fish_abbr_dsall:docker\x20container\x20stop\x2047b073b94639
 SETUVAR _fish_abbr_f:fuck
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
@@ -28,7 +30,16 @@ SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_gs:git\x20status\x20\x2ds\x20\x2dM\x20\x2db
 SETUVAR _fish_abbr_gst:git\x20status\x20\x2ds
+SETUVAR _fish_abbr_k:kubectl
 SETUVAR _fish_abbr_ka:sudo\x20killall\x20\x2d9
+SETUVAR _fish_abbr_kdd:kubectl\x20delete\x20deployments
+SETUVAR _fish_abbr_kdp:kubectl\x20delete\x20pods
+SETUVAR _fish_abbr_kds:kubectl\x20delete\x20services
+SETUVAR _fish_abbr_kg:kubectl\x20get
+SETUVAR _fish_abbr_kga:kubectl\x20get\x20all\x20\x2d\x2dall\x2dnamespaces
+SETUVAR _fish_abbr_kgd:kubectl\x20get\x20deployments
+SETUVAR _fish_abbr_kgp:kubectl\x20get\x20pods
+SETUVAR _fish_abbr_kgs:kubectl\x20get\x20services
 SETUVAR _fish_abbr_la:exa\x20\x2da
 SETUVAR _fish_abbr_ll:exa\x20\x2dla\x20\x2d\x2dgit
 SETUVAR _fish_abbr_ls:exa
