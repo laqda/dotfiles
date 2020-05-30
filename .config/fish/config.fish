@@ -10,16 +10,20 @@ set -g theme_nerd_fonts yes
 # consts
 
 set GRADLE_HOME /opt/gradle/gradle-5.0/bin
+set MAVEN_HOME /home/q/tools/apache-maven-3.6.3/bin
 set CARGO_HOME /home/q/.cargo/bin
 set ECLIPSE_HOME /home/q/tools/eclipse
 set GRAALVM_HOME /home/q/tools/graalvm-ce-java11-19.3.1/
+set HELM_HOME /home/q/tools/helm/
 
 # path
 
 set PATH $PATH $CARGO_HOME
 set PATH $PATH $GRADLE_HOME
+set PATH $PATH $MAVEN_HOME
 set PATH $PATH $ECLIPSE_HOME
 set PATH $PATH $GRAALVM_HOME/bin
+set PATH $PATH $HELM_HOME
 
 # alias
 
@@ -35,7 +39,7 @@ abbr v nvim
 abbr nv nvim
 abbr s sudo
 abbr ka sudo killall -9
-abbr apt sudo apt
+abbr h helm
 
 ## abbr git
 
@@ -67,13 +71,19 @@ abbr dc docker-compose
 
 abbr k kubectl
 abbr kg kubectl get
-abbr kga kubectl get all --all-namespaces
+abbr kga kubectl get all
+abbr kgaa kubectl get all --all-namespaces
 abbr kgp kubectl get pods
+abbr kgpa kubectl get pods --all-namespaces
 abbr kgs kubectl get services
-abbr kgd kubectl get deployments
+abbr kgd kubectl get deploy
 abbr kdp kubectl delete pods
 abbr kds kubectl delete services
-abbr kdd kubectl delete deployments
+abbr kdd kubectl delete deploy
+abbr kl kubectl logs -f
+abbr kt kubectl top
+abbr ktp kubectl top pods
+abbr ktpa kubectl top pods --all-namespaces
 
 ## abbr vpn
 
@@ -87,3 +97,6 @@ abbr ll exa -la --git
 
 # opam configuration
 source /home/q/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+
+# link docker and minikube registries
+# eval (minikube -p minikube docker-env)
