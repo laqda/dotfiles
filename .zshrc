@@ -129,7 +129,6 @@ alias gl="git log --decorate --pretty=format:'%C(bold blue)%h%C(reset) %C(bold c
 abbr -S glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''           %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 abbr -S gc="git commit -m"
 abbr -S gci="git commit -m"
-abbr -S gco="git checkout $(g:sb)"
 abbr -S gcob="git branch | fzf | xargs git checkout"
 abbr -S ga="git add"
 abbr -S gau="git add -u"
@@ -152,6 +151,15 @@ function gd {
 	
 	# select second commit
 	# select files
+}
+
+function gco {
+	local branch;
+	branch=$(git branch -l \
+	| fzf -q "${1}" -1 --no-multi --reverse \
+	| sed -e 's/^\** *//g')
+
+	git checkout $branch
 }
 
 # ---------------------------------------------------------------------------------------------------
