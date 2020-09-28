@@ -1,0 +1,132 @@
+prompt_order = [
+    "cmd_duration",
+    "username",
+    "jobs",
+
+    "custom.if_not_git_space_323232",
+    "custom.if_not_git_path",
+    "custom.if_not_git_space_323232",
+
+    "custom.if_git_space_323232",
+    "custom.if_git_path_before_git",
+    "custom.if_git_space_323232",
+    
+    "custom.if_git_separation_323232_to_yellow",
+    
+    "custom.if_git_space_yellow",
+    "custom.git_branch",
+    "git_commit",
+    "git_state",
+    "custom.if_git_space_yellow",
+    "git_status",
+    "custom.git_status_spaces",
+    
+    "custom.if_git_separation_yellow_to_323232",
+
+    "custom.if_git_space_323232",
+    "custom.if_git_path_after_git",
+    "custom.if_git_path_after_git_spaces",
+    "character",
+]
+
+add_newline = false
+
+[character]
+style_success = "bg:#323232 bold green"
+style_failure = "bg:#323232 bold red"
+
+# if currently not in a git repository
+
+[custom.if_not_git_path]
+style = "fg:white bg:#323232"
+command = "pwd"
+when = "[[ $(git rev-parse --is-inside-work-tree) != \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[custom.if_not_git_space_323232]
+style = "fg:#323232 bg:#323232"
+command = "echo _"
+when = "[[ $(git rev-parse --is-inside-work-tree) != \"true\" ]]"
+prefix = ""
+suffix = ""
+
+# if currently in a git repository
+
+[custom.if_git_space_323232]
+style = "fg:#323232 bg:#323232"
+command = "echo _"
+when = "[[ $(git rev-parse --is-inside-work-tree) == \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[custom.if_git_space_yellow]
+style = "fg:yellow bg:yellow"
+command = "echo _"
+when = "[[ $(git rev-parse --is-inside-work-tree) == \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[custom.if_git_separation_323232_to_yellow]
+style = "fg:#323232 bg:yellow"
+command = "echo "
+when = "[[ $(git rev-parse --is-inside-work-tree) == \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[custom.if_git_separation_yellow_to_323232]
+style = "fg:yellow bg:#323232"
+command = "echo "
+when = "[[ $(git rev-parse --is-inside-work-tree) == \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[custom.git_branch]
+style = "fg:#323232 bg:yellow bold"
+command = "git rev-parse --abbrev-ref HEAD"
+when = "[[ $(git rev-parse --is-inside-work-tree) == \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[git_commit]
+style = "fg:#323232 bg:yellow"
+only_detached = true
+prefix = "("
+suffix = ")"
+
+[git_state]
+style = "fg:#323232 bg:yellow"
+
+[git_status]
+style = "fg:#323232 bg:yellow"
+prefix = "["
+suffix = "]"
+
+[custom.git_status_spaces]
+style = "fg:yellow bg:yellow"
+command = "echo _"
+when = "[[ $(git status -s -M -b | tail -n +2 | wc -c) -ne 0 ]]"
+prefix = ""
+suffix = ""
+
+[custom.if_git_path_before_git]
+style = "fg:white bg:#323232"
+#command = "echo \"${$(git rev-parse --show-toplevel)/$HOME/~}\""
+command = "echo \"${$(git rev-parse --show-toplevel)/$HOME/~}\" | rev | sed -e \"s;\\(/.\\)[^/]*;\\1;1g\" | rev"
+when = "[[ $(git rev-parse --is-inside-work-tree) == \"true\" ]]"
+prefix = ""
+suffix = ""
+
+[custom.if_git_path_after_git]
+style = "fg:white bg:#323232"
+command = "echo ${$(git rev-parse --show-prefix)%/}"
+when = "[[ $(git rev-parse --show-prefix | tr -d '\n' | wc -c) -ne 0 ]]" # if got a path after repository
+prefix = ""
+suffix = ""
+
+[custom.if_git_path_after_git_spaces]
+style = "fg:#323232 bg:#323232"
+command = "echo _"
+when = "[[ $(git rev-parse --show-prefix | tr -d '\n' | wc -c) -ne 0 ]]" # if got a path after repository
+prefix = ""
+suffix = ""

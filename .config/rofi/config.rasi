@@ -1,0 +1,11 @@
+configuration {
+	lines: 25;
+	location: 2;
+	yoffset: 20;
+	bw: 0;
+	width: 90;
+	theme: "~/.local/share/rofi/custom.rasi";
+}
+
+
+
