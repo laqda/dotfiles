@@ -1,5 +1,5 @@
 prompt_order = [
-    "cmd_duration",
+#    "cmd_duration",
     "username",
     "jobs",
 
