@@ -100,3 +100,5 @@ source /home/q/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
 # link docker and minikube registries
 # eval (minikube -p minikube docker-env)
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
