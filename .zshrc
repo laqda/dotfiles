@@ -34,7 +34,7 @@ AGNOSTER_PROMPT_SEGMENTS=(
 # ---------------------------------------------------------------------------------------------------
 
 plugins=(
-	cargo
+#	cargo
 	command-not-found
 	z 
 	zsh-autosuggestions
